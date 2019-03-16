@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="193.0" prefWidth="442.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.MenuPrincipalControleur">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="465.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="btnajout" layoutX="27.0" layoutY="252.0" mnemonicParsing="false" onAction="#ajoutres" prefHeight="108.0" prefWidth="194.0" style="-fx-border-color: #F7D871; -fx-border-width: 3; -fx-background-color: black;" text="Ajouter une reservation" textFill="#f7d871" />
+            <Button fx:id="btnaff" layoutX="251.0" layoutY="252.0" mnemonicParsing="false" onAction="#affres" prefHeight="108.0" prefWidth="194.0" style="-fx-border-color: #F7D871; -fx-border-width: 3; -fx-background-color: black;" text="Afficher les reservations" textFill="#f7d871" />
+            <Button fx:id="btngest" layoutX="27.0" layoutY="378.0" mnemonicParsing="false" onAction="#gestetab" prefHeight="108.0" prefWidth="194.0" style="-fx-border-color: #F7D871; -fx-border-width: 3; -fx-background-color: black;" text="Gérer les établissements" textFill="#f7d871" />
+            <ImageView fitHeight="205.0" fitWidth="310.0" layoutX="84.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="resources/ImperialHotelPFA.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnclt" layoutX="251.0" layoutY="376.0" mnemonicParsing="false" onAction="#affcli" prefHeight="108.0" prefWidth="194.0" style="-fx-border-color: #F7D871; -fx-border-width: 3; -fx-background-color: black;" text="Afficher les clients" textFill="#f7d871" />
+            <Button fx:id="btnacc" layoutX="136.0" layoutY="506.0" mnemonicParsing="false" onAction="#accetab" prefHeight="108.0" prefWidth="194.0" style="-fx-border-color: #F7D871; -fx-border-width: 3; -fx-background-color: black;" text="Gérer l'accès établissement" textFill="#f7d871" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

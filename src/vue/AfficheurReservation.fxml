@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.AfficheurReservationControleur">
+   <children>
+      <Pane prefHeight="477.0" prefWidth="699.0" style="-fx-background-color: black;">
+         <children>
+            <TableView fx:id="reservation" layoutX="5.0" layoutY="107.0" prefHeight="220.0" prefWidth="688.0" style="-fx-background-color: #F7D871;">
+              <columns>
+                <TableColumn fx:id="nomcl" prefWidth="75.0" style="-fx-background-color: #F7D871;" text="Nom Client" />
+                <TableColumn fx:id="precl" prefWidth="86.0" style="-fx-background-color: #F7D871;" text="Prenom Client" />
+                  <TableColumn fx:id="datedeblog" prefWidth="157.0" style="-fx-background-color: #F7D871;" text="Date de début logement" />
+                  <TableColumn fx:id="datefinlog" prefWidth="126.0" style="-fx-background-color: #F7D871;" text="Date de fin logement" />
+                  <TableColumn fx:id="typelog" prefWidth="113.0" style="-fx-background-color: #F7D871;" text="Type de logement" />
+                  <TableColumn fx:id="numchambre" prefWidth="130.0" style="-fx-background-color: #F7D871;" text="Numéro de Chambre" />
+              </columns>
+            </TableView>
+            <Button fx:id="chercher" layoutX="542.0" layoutY="363.0" mnemonicParsing="false" onAction="#chercherres" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: black; -fx-border-color: #F7D871; -fx-text-fill: #F7D871;" text="Chercher" />
+            <Label layoutX="155.0" layoutY="39.0" style="-fx-text-fill: #F7D871;" text="Gestionnaire des Reservations">
+               <font>
+                  <Font name="Andalus" size="32.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtnom" layoutX="81.0" layoutY="368.0" style="-fx-background-color: black; -fx-border-color: #F7D871; -fx-text-fill: #F7D871;" />
+            <TextField fx:id="txtprenom" layoutX="349.0" layoutY="368.0" style="-fx-background-color: black; -fx-border-color: #F7D871; -fx-text-fill: #F7D871;" />
+            <Label layoutX="36.0" layoutY="372.0" style="-fx-text-fill: #F7D871;" text="Nom" />
+            <Label layoutX="275.0" layoutY="372.0" style="-fx-text-fill: #F7D871;" text="Prenom" />
+            <Button fx:id="btntousres" layoutX="120.0" layoutY="428.0" mnemonicParsing="false" onAction="#afftousres" style="-fx-background-color: black; -fx-border-color: #F7D871; -fx-text-fill: #F7D871;" text="Afficher Tous Les Reservations" />
+            <Button fx:id="btnrescour" layoutX="395.0" layoutY="427.0" mnemonicParsing="false" onAction="#affrescour" style="-fx-border-color: #F7D871; -fx-background-color: black; -fx-text-fill: #F7D871;" text="Afficher Les Reservations Courantes" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

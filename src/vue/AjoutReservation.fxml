@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.ReservationControleur">
+   <children>
+      <Pane prefHeight="633.0" prefWidth="632.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="153.0" layoutY="34.0" prefHeight="58.0" prefWidth="386.0" style="-fx-text-fill: #F7D871;" text="Ajouter une reservation">
+               <font>
+                  <Font name="Andalus" size="34.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nom" layoutX="117.0" layoutY="125.0" style="-fx-border-color: #F7D871; -fx-background-color: black; -fx-text-fill: #F7D871;" />
+            <Label layoutX="46.0" layoutY="129.0" style="-fx-text-fill: #F7D871;" text="Nom" />
+            <Label layoutX="340.0" layoutY="129.0" style="-fx-text-fill: #F7D871;" text="Prénom" />
+            <TextField fx:id="prenom" layoutX="429.0" layoutY="125.0" style="-fx-border-color: #F7D871; -fx-background-color: black; -fx-text-fill: #F7D871;" />
+            <Label layoutX="45.0" layoutY="202.0" style="-fx-text-fill: #F7D871;" text="Nationalité" />
+            <TextField fx:id="nationalite" layoutX="117.0" layoutY="198.0" style="-fx-border-color: #F7D871; -fx-background-color: black; -fx-text-fill: #F7D871;" />
+            <DatePicker fx:id="datedebut" editable="true" layoutX="68.0" layoutY="292.0" style="-fx-border-color: #F7D871; -fx-background-color: black;" />
+            <Label layoutX="97.0" layoutY="264.0" prefHeight="17.0" prefWidth="113.0" style="-fx-text-fill: #F7D871;" text="Date de réservation" />
+            <Label layoutX="340.0" layoutY="199.0" style="-fx-text-fill: #F7D871;" text="Numèro Tel." />
+            <TextField fx:id="numtel" layoutX="429.0" layoutY="196.0" style="-fx-border-color: #F7D871; -fx-background-color: black; -fx-text-fill: #F7D871;" />
+            <DatePicker fx:id="datefin" editable="true" layoutX="372.0" layoutY="292.0" style="-fx-border-color: #F7D871; -fx-background-color: black;" />
+            <Label layoutX="403.0" layoutY="264.0" prefHeight="17.0" prefWidth="113.0" style="-fx-text-fill: #F7D871;" text="Date de fin logement" />
+            <Label layoutX="103.0" layoutY="373.0" style="-fx-text-fill: #F7D871;" text="Type Chambre" />
+            <RadioButton fx:id="couple" layoutX="267.0" layoutY="373.0" mnemonicParsing="false" style="-fx-text-fill: #F7D871; -fx-background-color: black;" text="Couple" />
+            <RadioButton fx:id="litss" layoutX="396.0" layoutY="373.0" mnemonicParsing="false" style="-fx-text-fill: #F7D871; -fx-background-color: black;" text="Lits Separés" />
+            <RadioButton fx:id="douche" layoutX="268.0" layoutY="418.0" mnemonicParsing="false" style="-fx-text-fill: #F7D871; -fx-background-color: black;" text="Douche" />
+            <RadioButton fx:id="bain" layoutX="397.0" layoutY="418.0" mnemonicParsing="false" style="-fx-text-fill: #F7D871; -fx-background-color: black;" text="Bain" />
+            <Label layoutX="104.0" layoutY="418.0" style="-fx-text-fill: #F7D871;" text="Type Salle de Bain" />
+            <Label layoutX="104.0" layoutY="463.0" style="-fx-text-fill: #F7D871;" text="Nombre de lits" />
+            <TextField fx:id="nbrlits" layoutX="220.0" layoutY="459.0" style="-fx-border-color: #F7D871; -fx-background-color: black; -fx-text-fill: #F7D871;" />
+            <Label layoutX="71.0" layoutY="531.0" style="-fx-text-fill: #F7D871;" text="Type Logement" />
+            <RadioButton fx:id="standard" layoutX="197.0" layoutY="531.0" mnemonicParsing="false" style="-fx-text-fill: #F7D871; -fx-background-color: black;" text="Standard" />
+            <RadioButton fx:id="inclusive" layoutX="337.0" layoutY="531.0" mnemonicParsing="false" style="-fx-text-fill: #F7D871; -fx-background-color: black;" text="All Inclusive" />
+            <RadioButton fx:id="vip" layoutX="480.0" layoutY="531.0" mnemonicParsing="false" style="-fx-text-fill: #F7D871; -fx-background-color: black;" text="VIP" />
+            <Button fx:id="valider" layoutX="181.0" layoutY="594.0" mnemonicParsing="false" onAction="#confirmer" style="-fx-text-fill: #F7D871; -fx-background-color: black; -fx-border-color: #F7D871;" text="Confirmer" />
+            <Button fx:id="anuuler" layoutX="394.0" layoutY="594.0" mnemonicParsing="false" onAction="#remiseazero" style="-fx-text-fill: #F7D871; -fx-background-color: black; -fx-border-color: #F7D871;" text="Annuler" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
